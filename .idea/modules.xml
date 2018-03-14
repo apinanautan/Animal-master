@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:\027\Animal-master\Animal For Fun.iml" filepath="D:\027\Animal-master\Animal For Fun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Animal-master.iml" filepath="$PROJECT_DIR$/Animal-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

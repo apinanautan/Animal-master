@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sdu.cs58.apinan.animal.GameActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/question"
+        android:textSize="@dimen/h1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imvQuestion"
+        android:layout_width="@dimen/my_image"
+        android:layout_height="@dimen/my_image"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imbVolumn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/bird" />
+
+    <ImageButton
+        android:id="@+id/imbVolumn"
+        android:layout_width="@dimen/my_iconVolumn"
+        android:layout_height="@dimen/my_iconVolumn"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:onClick="playSound"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imvQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imvQuestion"
+        app:layout_constraintTop_toTopOf="@+id/imvQuestion"
+        app:srcCompat="@drawable/volume" />
+
+    <Button
+        android:id="@+id/vtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vtn2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvQuestion" />
+
+    <Button
+        android:id="@+id/vtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/vtn1"
+        app:layout_constraintEnd_toStartOf="@+id/vtn3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/vtn1"
+        app:layout_constraintTop_toTopOf="@+id/vtn1" />
+
+    <Button
+        android:id="@+id/vtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/vtn2"
+        app:layout_constraintEnd_toStartOf="@+id/vtn4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/vtn2"
+        app:layout_constraintTop_toTopOf="@+id/vtn2" />
+
+    <Button
+        android:id="@+id/vtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/vtn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/vtn3"
+        app:layout_constraintTop_toTopOf="@+id/vtn3" />
+</android.support.constraint.ConstraintLayout>
